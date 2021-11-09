@@ -2,7 +2,9 @@
 
 .header{
     
-    margin-top: rem(36);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: rem(40);
 
     @include breakpoint(medium){
         display: flex;
@@ -10,7 +12,11 @@
     }
 
     &__title{
+        width: 100%;
 
+        @include breakpoint(medium){
+            width: auto;
+        }
     }
     
     &__subtitle{
@@ -20,6 +26,5 @@
     }
 
     &__toggle{
-
     }
 }
