@@ -1,0 +1,11 @@
+@use "sass:math";
+
+
+// 16 pixels equals 1 rem by default for most browsers
+@function rem($pixels, $context: 16) {
+    @return (math.div($pixels, $context)) * 1rem;
+}
+
+h1 {
+    font-size: rem(30);
+}
